@@ -9,5 +9,5 @@
 import Foundation
 
 let spectrogram = Spectrogram()
-spectrogram.staticMode()
+spectrogram.loadAudioData()
 

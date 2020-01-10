@@ -10,7 +10,14 @@ import Foundation
 
 class Spectrogram {
     let consoleIO = ConsoleIO()
-    
+
+    func loadAudioData() {
+        let url = URL(fileURLWithPath: "/Users/dan/src/3p/iOS-Spectrogram/UIImage_SpectrogramTests/toujours.wav")
+        if let audio = DataLoader.loadAudioSamplesArrayOf(Float.self, atUrl:url) {
+            print("Loaded audio data: \(audio.count)")
+        }
+    }
+
     func staticMode() {
         consoleIO.printUsage()
     }
