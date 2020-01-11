@@ -10,8 +10,8 @@ import Foundation
 import SwiftImage
 
 class Spectrogram {
-    func loadAudioData() -> [Float]? {
-        let url = URL(fileURLWithPath: "/Users/dan/src/3p/iOS-Spectrogram/UIImage_SpectrogramTests/toujours.wav")
+    func loadAudioData(_ inputFile: String) -> [Float]? {
+        let url = URL(fileURLWithPath: inputFile)
         if let audio = DataLoader.loadAudioSamplesArrayOf(Float.self, atUrl:url) {
             print("Loaded audio data: \(audio.count)")
             return audio
@@ -40,8 +40,14 @@ class Spectrogram {
         return image
     }
 
-    func createSpectrogram() {
-        if let audio = loadAudioData() {
+    func createSpectrogram() throws {
+        let args: [ArgType: String]
+        do {
+            try args = parseArgs()
+        } catch {
+            fatalError()
+        }
+        if let audio = loadAudioData(args[.InputFile]!) {
             var fftValues = [[Float]]()
             for chunk in audio.chunks(1024) {
                 fftValues.append(fft(chunk).real)
@@ -49,8 +55,8 @@ class Spectrogram {
             print("Computed FFT: \(fftValues.count) x \(fftValues[0].count)")
 
             if let image = drawMagnitudes(magnitudes: fftValues) {
-                saveImage(image: image.cgImage, url: URL(fileURLWithPath: "/tmp/sylvia-spectrogram.png"))
                 print("Created output PNG")
+                saveImage(image: image.cgImage, url: URL(fileURLWithPath: args[.OutputFile]!))
             }
         }
     }

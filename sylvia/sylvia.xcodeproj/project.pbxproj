@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		379FA38A23C8B78C00F30505 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA38923C8B78C00F30505 /* main.swift */; };
-		379FA39123C8B99200F30505 /* ConsoleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA39023C8B99200F30505 /* ConsoleIO.swift */; };
 		379FA39323C8BFEC00F30505 /* Spectrogram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA39223C8BFEC00F30505 /* Spectrogram.swift */; };
 		379FA39523C8D88100F30505 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA39423C8D88100F30505 /* DataLoader.swift */; };
 		379FA39D23C8F32400F30505 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA39C23C8F32400F30505 /* Extensions.swift */; };
@@ -16,6 +15,7 @@
 		379FA3A123C8F3A100F30505 /* Rescale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA3A023C8F3A100F30505 /* Rescale.swift */; };
 		379FA3C223C9612A00F30505 /* SwiftImage in Frameworks */ = {isa = PBXBuildFile; productRef = 379FA3C123C9612A00F30505 /* SwiftImage */; };
 		379FA3C423C9676500F30505 /* ImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA3C323C9676400F30505 /* ImageUtils.swift */; };
+		379FA3C623CA7F8200F30505 /* ArgParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA3C523CA7F8200F30505 /* ArgParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,7 +85,6 @@
 /* Begin PBXFileReference section */
 		379FA38623C8B78C00F30505 /* sylvia */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sylvia; sourceTree = BUILT_PRODUCTS_DIR; };
 		379FA38923C8B78C00F30505 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		379FA39023C8B99200F30505 /* ConsoleIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleIO.swift; sourceTree = "<group>"; };
 		379FA39223C8BFEC00F30505 /* Spectrogram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spectrogram.swift; sourceTree = "<group>"; };
 		379FA39423C8D88100F30505 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		379FA39C23C8F32400F30505 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -93,6 +92,7 @@
 		379FA3A023C8F3A100F30505 /* Rescale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rescale.swift; sourceTree = "<group>"; };
 		379FA3A523C960A100F30505 /* SwiftImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SwiftImage.xcodeproj; sourceTree = "<group>"; };
 		379FA3C323C9676400F30505 /* ImageUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtils.swift; sourceTree = "<group>"; };
+		379FA3C523CA7F8200F30505 /* ArgParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,8 +114,8 @@
 				379FA39C23C8F32400F30505 /* Extensions.swift */,
 				379FA39E23C8F35F00F30505 /* FFT.swift */,
 				379FA39423C8D88100F30505 /* DataLoader.swift */,
-				379FA39023C8B99200F30505 /* ConsoleIO.swift */,
 				379FA39223C8BFEC00F30505 /* Spectrogram.swift */,
+				379FA3C523CA7F8200F30505 /* ArgParser.swift */,
 				379FA3C323C9676400F30505 /* ImageUtils.swift */,
 				379FA38823C8B78C00F30505 /* sylvia */,
 				379FA38723C8B78C00F30505 /* Products */,
@@ -288,9 +288,9 @@
 				379FA3A123C8F3A100F30505 /* Rescale.swift in Sources */,
 				379FA39F23C8F35F00F30505 /* FFT.swift in Sources */,
 				379FA38A23C8B78C00F30505 /* main.swift in Sources */,
-				379FA39123C8B99200F30505 /* ConsoleIO.swift in Sources */,
 				379FA39323C8BFEC00F30505 /* Spectrogram.swift in Sources */,
 				379FA3C423C9676500F30505 /* ImageUtils.swift in Sources */,
+				379FA3C623CA7F8200F30505 /* ArgParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

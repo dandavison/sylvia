@@ -9,5 +9,8 @@
 import Foundation
 
 let spectrogram = Spectrogram()
-spectrogram.createSpectrogram()
-
+do {
+    try spectrogram.createSpectrogram()
+} catch {
+    fatalError()
+}
