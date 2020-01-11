@@ -10,8 +10,6 @@ import Foundation
 import SwiftImage
 
 class Spectrogram {
-    let consoleIO = ConsoleIO()
-
     func loadAudioData() -> [Float]? {
         let url = URL(fileURLWithPath: "/Users/dan/src/3p/iOS-Spectrogram/UIImage_SpectrogramTests/toujours.wav")
         if let audio = DataLoader.loadAudioSamplesArrayOf(Float.self, atUrl:url) {
@@ -55,9 +53,5 @@ class Spectrogram {
                 print("Created output PNG")
             }
         }
-    }
-
-    func staticMode() {
-        consoleIO.printUsage()
     }
 }
