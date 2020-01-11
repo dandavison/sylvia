@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,7 +14,60 @@
 		379FA39D23C8F32400F30505 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA39C23C8F32400F30505 /* Extensions.swift */; };
 		379FA39F23C8F35F00F30505 /* FFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA39E23C8F35F00F30505 /* FFT.swift */; };
 		379FA3A123C8F3A100F30505 /* Rescale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA3A023C8F3A100F30505 /* Rescale.swift */; };
+		379FA3C223C9612A00F30505 /* SwiftImage in Frameworks */ = {isa = PBXBuildFile; productRef = 379FA3C123C9612A00F30505 /* SwiftImage */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		379FA3AF23C960A100F30505 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 379FA3A523C960A100F30505 /* SwiftImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D6134A0E1F85226C005592A2;
+			remoteInfo = "SwiftImage-iOS";
+		};
+		379FA3B123C960A100F30505 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 379FA3A523C960A100F30505 /* SwiftImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D6134A171F85226D005592A2;
+			remoteInfo = "SwiftImageTests-iOS";
+		};
+		379FA3B323C960A100F30505 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 379FA3A523C960A100F30505 /* SwiftImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D6134A601F852C80005592A2;
+			remoteInfo = "SwiftImage-macOS";
+		};
+		379FA3B523C960A100F30505 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 379FA3A523C960A100F30505 /* SwiftImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D6134A681F852C80005592A2;
+			remoteInfo = "SwiftImageTests-macOS";
+		};
+		379FA3B723C960A100F30505 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 379FA3A523C960A100F30505 /* SwiftImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D6134AA21F85D1F9005592A2;
+			remoteInfo = "SwiftImage-tvOS";
+		};
+		379FA3B923C960A100F30505 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 379FA3A523C960A100F30505 /* SwiftImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D6134AAA1F85D1FA005592A2;
+			remoteInfo = "SwiftImageTests-tvOS";
+		};
+		379FA3BB23C960A100F30505 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 379FA3A523C960A100F30505 /* SwiftImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D6134AD21F85D800005592A2;
+			remoteInfo = "SwiftImage-watchOS";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		379FA38423C8B78C00F30505 /* CopyFiles */ = {
@@ -37,6 +90,7 @@
 		379FA39C23C8F32400F30505 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		379FA39E23C8F35F00F30505 /* FFT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFT.swift; sourceTree = "<group>"; };
 		379FA3A023C8F3A100F30505 /* Rescale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rescale.swift; sourceTree = "<group>"; };
+		379FA3A523C960A100F30505 /* SwiftImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SwiftImage.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				379FA3C223C9612A00F30505 /* SwiftImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +116,7 @@
 				379FA39223C8BFEC00F30505 /* Spectrogram.swift */,
 				379FA38823C8B78C00F30505 /* sylvia */,
 				379FA38723C8B78C00F30505 /* Products */,
+				379FA3A423C960A100F30505 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +136,28 @@
 			path = sylvia;
 			sourceTree = "<group>";
 		};
+		379FA3A423C960A100F30505 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				379FA3A523C960A100F30505 /* SwiftImage.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		379FA3A623C960A100F30505 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				379FA3B023C960A100F30505 /* SwiftImage.framework */,
+				379FA3B223C960A100F30505 /* SwiftImageTests-iOS.xctest */,
+				379FA3B423C960A100F30505 /* SwiftImage.framework */,
+				379FA3B623C960A100F30505 /* SwiftImageTests.xctest */,
+				379FA3B823C960A100F30505 /* SwiftImage.framework */,
+				379FA3BA23C960A100F30505 /* SwiftImageTests.xctest */,
+				379FA3BC23C960A100F30505 /* SwiftImage.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -96,6 +174,9 @@
 			dependencies = (
 			);
 			name = sylvia;
+			packageProductDependencies = (
+				379FA3C123C9612A00F30505 /* SwiftImage */,
+			);
 			productName = sylvia;
 			productReference = 379FA38623C8B78C00F30505 /* sylvia */;
 			productType = "com.apple.product-type.tool";
@@ -124,14 +205,75 @@
 				Base,
 			);
 			mainGroup = 379FA37D23C8B78C00F30505;
+			packageReferences = (
+				379FA3C023C9612A00F30505 /* XCRemoteSwiftPackageReference "swift-image" */,
+			);
 			productRefGroup = 379FA38723C8B78C00F30505 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 379FA3A623C960A100F30505 /* Products */;
+					ProjectRef = 379FA3A523C960A100F30505 /* SwiftImage.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				379FA38523C8B78C00F30505 /* sylvia */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		379FA3B023C960A100F30505 /* SwiftImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftImage.framework;
+			remoteRef = 379FA3AF23C960A100F30505 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		379FA3B223C960A100F30505 /* SwiftImageTests-iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftImageTests-iOS.xctest";
+			remoteRef = 379FA3B123C960A100F30505 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		379FA3B423C960A100F30505 /* SwiftImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftImage.framework;
+			remoteRef = 379FA3B323C960A100F30505 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		379FA3B623C960A100F30505 /* SwiftImageTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftImageTests.xctest;
+			remoteRef = 379FA3B523C960A100F30505 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		379FA3B823C960A100F30505 /* SwiftImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftImage.framework;
+			remoteRef = 379FA3B723C960A100F30505 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		379FA3BA23C960A100F30505 /* SwiftImageTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftImageTests.xctest;
+			remoteRef = 379FA3B923C960A100F30505 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		379FA3BC23C960A100F30505 /* SwiftImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftImage.framework;
+			remoteRef = 379FA3BB23C960A100F30505 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		379FA38223C8B78C00F30505 /* Sources */ = {
@@ -308,6 +450,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		379FA3C023C9612A00F30505 /* XCRemoteSwiftPackageReference "swift-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/koher/swift-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		379FA3C123C9612A00F30505 /* SwiftImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 379FA3C023C9612A00F30505 /* XCRemoteSwiftPackageReference "swift-image" */;
+			productName = SwiftImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 379FA37E23C8B78C00F30505 /* Project object */;
 }
