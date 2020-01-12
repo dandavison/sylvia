@@ -13,7 +13,6 @@ class Spectrogram {
     func loadAudioData(_ inputFile: String) -> [Float]? {
         let url = URL(fileURLWithPath: inputFile)
         if let audio = DataLoader.loadAudioSamplesArrayOf(Float.self, atUrl:url) {
-            print("Loaded audio data: \(audio.count)")
             return audio
         }
         return nil
@@ -47,17 +46,18 @@ class Spectrogram {
         } catch {
             fatalError()
         }
+        let chunkSize = 2 << 9
         if let audio = loadAudioData(args[.InputFile]!) {
             var fftValues = [[Float]]()
-            for chunk in audio.chunks(1024) {
-                fftValues.append(Array(fft(chunk).real[0..<512]))
+            for chunk in audio.chunks(chunkSize) {
+                fftValues.append(Array(fft(chunk).real[0..<(chunkSize >> 1)]))
             }
-            print("Computed FFT: \(fftValues.count) x \(fftValues[0].count)")
-
+            print("Computed FFT: \(fftValues.count) x \(fftValues.first!.count)")
             if let image = drawMagnitudes(magnitudes: fftValues) {
-                print("Created output PNG")
                 saveImage(image: image.cgImage, url: URL(fileURLWithPath: args[.OutputFile]!))
             }
+        } else {
+            print("Failed to load audio file: \(args[.InputFile]!)")
         }
     }
 }

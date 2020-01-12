@@ -17,10 +17,8 @@ func saveImage(image: NSImage, url: URL) -> Bool {
 
     do {
         try pngData.write(to: url, options: Data.WritingOptions.atomic)
-        print("save: \(url)")
         return true
     } catch(let e) {
-        print("failed")
         return false
     }
 }
@@ -31,10 +29,8 @@ func saveImage(image: CGImage, url: URL) -> Bool {
 
     do {
         try pngData.write(to: url, options: Data.WritingOptions.atomic)
-        print("save: \(url)")
         return true
     } catch(let e) {
-        print("failed")
         return false
     }
 }
