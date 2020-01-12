@@ -50,7 +50,7 @@ class Spectrogram {
         if let audio = loadAudioData(args[.InputFile]!) {
             var fftValues = [[Float]]()
             for chunk in audio.chunks(1024) {
-                fftValues.append(fft(chunk).real)
+                fftValues.append(Array(fft(chunk).real[0..<512]))
             }
             print("Computed FFT: \(fftValues.count) x \(fftValues[0].count)")
 
