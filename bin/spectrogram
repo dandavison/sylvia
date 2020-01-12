@@ -151,7 +151,7 @@ def create_spectrogram_images(spectrogram, outfile):
         segment_frame = [yr_min, yr_max, xr_min, xr_max]
         subpic = mypic_rev_log_gauss[yr_min:yr_max+1,xr_min:xr_max+1]
 
-    fig.savefig(outfile.encode('utf-8'), dpi = 300)
+    fig.savefig(outfile, dpi = 300)
 
 
 if __name__ == '__main__':
