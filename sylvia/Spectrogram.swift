@@ -46,11 +46,17 @@ class Spectrogram {
         } catch {
             fatalError()
         }
-        let chunkSize = 2 << 9
+        let chunkSize = Int(args[.ChunkSize]!)!
+        let chunkStep = 100
+
         if let audio = loadAudioData(args[.InputFile]!) {
             var fftValues = [[Float]]()
-            for chunk in audio.chunks(chunkSize) {
-                fftValues.append(Array(fft(chunk).real[0..<(chunkSize >> 1)]))
+
+            for chunk in audio.slidingChunks(chunkSize, chunkStep:chunkStep) {
+                if chunk.count == chunkSize {
+                    let fftChunkValues = fft(chunk).real
+                    fftValues.append(Array(fftChunkValues[0..<(chunkSize >> 1)]))
+                }
             }
             print("Computed FFT: \(fftValues.count) x \(fftValues.first!.count)")
             if let image = drawMagnitudes(magnitudes: fftValues) {

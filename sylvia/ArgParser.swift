@@ -11,6 +11,7 @@ import Foundation
 enum ArgType {
     case InputFile
     case OutputFile
+    case ChunkSize
 }
 
 func parseArgs() throws -> [ArgType: String] {
@@ -23,6 +24,7 @@ func parseArgs() throws -> [ArgType: String] {
         switch key {
             case "-i": args[.InputFile] = val
             case "-o": args[.OutputFile] = val
+            case "-s": args[.ChunkSize] = val
             case _: fatalError("Unexpected argument")
         }
     }
