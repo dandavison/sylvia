@@ -83,7 +83,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		379FA38623C8B78C00F30505 /* sylvia */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sylvia; sourceTree = BUILT_PRODUCTS_DIR; };
+		379FA38623C8B78C00F30505 /* sylvia-learn */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "sylvia-learn"; sourceTree = BUILT_PRODUCTS_DIR; };
 		379FA38923C8B78C00F30505 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		379FA39223C8BFEC00F30505 /* Spectrogram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spectrogram.swift; sourceTree = "<group>"; };
 		379FA39423C8D88100F30505 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
@@ -126,7 +126,7 @@
 		379FA38723C8B78C00F30505 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				379FA38623C8B78C00F30505 /* sylvia */,
+				379FA38623C8B78C00F30505 /* sylvia-learn */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,9 +164,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		379FA38523C8B78C00F30505 /* sylvia */ = {
+		379FA38523C8B78C00F30505 /* sylvia-learn */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 379FA38D23C8B78C00F30505 /* Build configuration list for PBXNativeTarget "sylvia" */;
+			buildConfigurationList = 379FA38D23C8B78C00F30505 /* Build configuration list for PBXNativeTarget "sylvia-learn" */;
 			buildPhases = (
 				379FA38223C8B78C00F30505 /* Sources */,
 				379FA38323C8B78C00F30505 /* Frameworks */,
@@ -176,12 +176,12 @@
 			);
 			dependencies = (
 			);
-			name = sylvia;
+			name = "sylvia-learn";
 			packageProductDependencies = (
 				379FA3C123C9612A00F30505 /* SwiftImage */,
 			);
 			productName = sylvia;
-			productReference = 379FA38623C8B78C00F30505 /* sylvia */;
+			productReference = 379FA38623C8B78C00F30505 /* sylvia-learn */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -221,7 +221,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				379FA38523C8B78C00F30505 /* sylvia */,
+				379FA38523C8B78C00F30505 /* sylvia-learn */,
 			);
 		};
 /* End PBXProject section */
@@ -444,7 +444,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		379FA38D23C8B78C00F30505 /* Build configuration list for PBXNativeTarget "sylvia" */ = {
+		379FA38D23C8B78C00F30505 /* Build configuration list for PBXNativeTarget "sylvia-learn" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				379FA38E23C8B78C00F30505 /* Debug */,
