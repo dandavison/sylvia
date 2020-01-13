@@ -54,7 +54,9 @@ class Spectrogram {
 
             for chunk in audio.slidingChunks(chunkSize, chunkStep:chunkStep) {
                 if chunk.count == chunkSize {
-                    let fftChunkValues = fft(applyWindow(chunk)).real
+                    let fftChunkValues = fft(applyWindow(chunk)).real.map {
+                        log(abs($0) + 1.0)
+                    }
                     fftValues.append(Array(fftChunkValues[0..<(chunkSize >> 1)]))
                 }
             }
