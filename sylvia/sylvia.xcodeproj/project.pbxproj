@@ -16,6 +16,13 @@
 		379FA3C223C9612A00F30505 /* SwiftImage in Frameworks */ = {isa = PBXBuildFile; productRef = 379FA3C123C9612A00F30505 /* SwiftImage */; };
 		379FA3C423C9676500F30505 /* ImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA3C323C9676400F30505 /* ImageUtils.swift */; };
 		379FA3C623CA7F8200F30505 /* ArgParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA3C523CA7F8200F30505 /* ArgParser.swift */; };
+		379FA3D823CC146E00F30505 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA3D723CC146E00F30505 /* AppDelegate.swift */; };
+		379FA3DA23CC146E00F30505 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA3D923CC146E00F30505 /* SceneDelegate.swift */; };
+		379FA3DC23CC146E00F30505 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA3DB23CC146E00F30505 /* ContentView.swift */; };
+		379FA3DE23CC147000F30505 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 379FA3DD23CC147000F30505 /* Assets.xcassets */; };
+		379FA3E123CC147000F30505 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 379FA3E023CC147000F30505 /* Preview Assets.xcassets */; };
+		379FA3E423CC147000F30505 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379FA3E223CC147000F30505 /* LaunchScreen.storyboard */; };
+		379FA3EF23CC147000F30505 /* sylviaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA3EE23CC147000F30505 /* sylviaTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +75,13 @@
 			remoteGlobalIDString = D6134AD21F85D800005592A2;
 			remoteInfo = "SwiftImage-watchOS";
 		};
+		379FA3EB23CC147000F30505 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 379FA37E23C8B78C00F30505 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 379FA3D423CC146E00F30505;
+			remoteInfo = sylvia;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -93,6 +107,17 @@
 		379FA3A523C960A100F30505 /* SwiftImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SwiftImage.xcodeproj; sourceTree = "<group>"; };
 		379FA3C323C9676400F30505 /* ImageUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtils.swift; sourceTree = "<group>"; };
 		379FA3C523CA7F8200F30505 /* ArgParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgParser.swift; sourceTree = "<group>"; };
+		379FA3D523CC146E00F30505 /* sylvia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sylvia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		379FA3D723CC146E00F30505 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		379FA3D923CC146E00F30505 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		379FA3DB23CC146E00F30505 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		379FA3DD23CC147000F30505 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		379FA3E023CC147000F30505 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		379FA3E323CC147000F30505 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		379FA3E523CC147000F30505 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		379FA3EA23CC147000F30505 /* sylviaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sylviaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		379FA3EE23CC147000F30505 /* sylviaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sylviaTests.swift; sourceTree = "<group>"; };
+		379FA3F023CC147000F30505 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +126,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				379FA3C223C9612A00F30505 /* SwiftImage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		379FA3D223CC146E00F30505 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		379FA3E723CC147000F30505 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +157,8 @@
 				379FA3C523CA7F8200F30505 /* ArgParser.swift */,
 				379FA3C323C9676400F30505 /* ImageUtils.swift */,
 				379FA38823C8B78C00F30505 /* sylvia */,
+				379FA3D623CC146E00F30505 /* sylvia */,
+				379FA3ED23CC147000F30505 /* sylviaTests */,
 				379FA38723C8B78C00F30505 /* Products */,
 				379FA3A423C960A100F30505 /* Frameworks */,
 			);
@@ -127,6 +168,8 @@
 			isa = PBXGroup;
 			children = (
 				379FA38623C8B78C00F30505 /* sylvia-learn */,
+				379FA3D523CC146E00F30505 /* sylvia.app */,
+				379FA3EA23CC147000F30505 /* sylviaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,6 +204,37 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		379FA3D623CC146E00F30505 /* sylvia */ = {
+			isa = PBXGroup;
+			children = (
+				379FA3D723CC146E00F30505 /* AppDelegate.swift */,
+				379FA3D923CC146E00F30505 /* SceneDelegate.swift */,
+				379FA3DB23CC146E00F30505 /* ContentView.swift */,
+				379FA3DD23CC147000F30505 /* Assets.xcassets */,
+				379FA3E223CC147000F30505 /* LaunchScreen.storyboard */,
+				379FA3E523CC147000F30505 /* Info.plist */,
+				379FA3DF23CC147000F30505 /* Preview Content */,
+			);
+			path = sylvia;
+			sourceTree = "<group>";
+		};
+		379FA3DF23CC147000F30505 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				379FA3E023CC147000F30505 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		379FA3ED23CC147000F30505 /* sylviaTests */ = {
+			isa = PBXGroup;
+			children = (
+				379FA3EE23CC147000F30505 /* sylviaTests.swift */,
+				379FA3F023CC147000F30505 /* Info.plist */,
+			);
+			path = sylviaTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -184,6 +258,41 @@
 			productReference = 379FA38623C8B78C00F30505 /* sylvia-learn */;
 			productType = "com.apple.product-type.tool";
 		};
+		379FA3D423CC146E00F30505 /* sylvia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 379FA3F123CC147000F30505 /* Build configuration list for PBXNativeTarget "sylvia" */;
+			buildPhases = (
+				379FA3D123CC146E00F30505 /* Sources */,
+				379FA3D223CC146E00F30505 /* Frameworks */,
+				379FA3D323CC146E00F30505 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sylvia;
+			productName = sylvia;
+			productReference = 379FA3D523CC146E00F30505 /* sylvia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		379FA3E923CC147000F30505 /* sylviaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 379FA3F423CC147000F30505 /* Build configuration list for PBXNativeTarget "sylviaTests" */;
+			buildPhases = (
+				379FA3E623CC147000F30505 /* Sources */,
+				379FA3E723CC147000F30505 /* Frameworks */,
+				379FA3E823CC147000F30505 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				379FA3EC23CC147000F30505 /* PBXTargetDependency */,
+			);
+			name = sylviaTests;
+			productName = sylviaTests;
+			productReference = 379FA3EA23CC147000F30505 /* sylviaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -196,6 +305,13 @@
 				TargetAttributes = {
 					379FA38523C8B78C00F30505 = {
 						CreatedOnToolsVersion = 11.3;
+					};
+					379FA3D423CC146E00F30505 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					379FA3E923CC147000F30505 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 379FA3D423CC146E00F30505;
 					};
 				};
 			};
@@ -222,6 +338,8 @@
 			projectRoot = "";
 			targets = (
 				379FA38523C8B78C00F30505 /* sylvia-learn */,
+				379FA3D423CC146E00F30505 /* sylvia */,
+				379FA3E923CC147000F30505 /* sylviaTests */,
 			);
 		};
 /* End PBXProject section */
@@ -278,6 +396,26 @@
 		};
 /* End PBXReferenceProxy section */
 
+/* Begin PBXResourcesBuildPhase section */
+		379FA3D323CC146E00F30505 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				379FA3E423CC147000F30505 /* LaunchScreen.storyboard in Resources */,
+				379FA3E123CC147000F30505 /* Preview Assets.xcassets in Resources */,
+				379FA3DE23CC147000F30505 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		379FA3E823CC147000F30505 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		379FA38223C8B78C00F30505 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -294,7 +432,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		379FA3D123CC146E00F30505 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				379FA3D823CC146E00F30505 /* AppDelegate.swift in Sources */,
+				379FA3DA23CC146E00F30505 /* SceneDelegate.swift in Sources */,
+				379FA3DC23CC146E00F30505 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		379FA3E623CC147000F30505 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				379FA3EF23CC147000F30505 /* sylviaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		379FA3EC23CC147000F30505 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 379FA3D423CC146E00F30505 /* sylvia */;
+			targetProxy = 379FA3EB23CC147000F30505 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		379FA3E223CC147000F30505 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				379FA3E323CC147000F30505 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		379FA38B23C8B78C00F30505 /* Debug */ = {
@@ -432,6 +607,98 @@
 			};
 			name = Release;
 		};
+		379FA3F223CC147000F30505 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"sylvia/Preview Content\"";
+				DEVELOPMENT_TEAM = Z649RMC53U;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = sylvia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dandavison.sylvia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		379FA3F323CC147000F30505 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"sylvia/Preview Content\"";
+				DEVELOPMENT_TEAM = Z649RMC53U;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = sylvia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dandavison.sylvia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		379FA3F523CC147000F30505 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z649RMC53U;
+				INFOPLIST_FILE = sylviaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dandavison.sylviaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sylvia.app/sylvia";
+			};
+			name = Debug;
+		};
+		379FA3F623CC147000F30505 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z649RMC53U;
+				INFOPLIST_FILE = sylviaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dandavison.sylviaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sylvia.app/sylvia";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -449,6 +716,24 @@
 			buildConfigurations = (
 				379FA38E23C8B78C00F30505 /* Debug */,
 				379FA38F23C8B78C00F30505 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		379FA3F123CC147000F30505 /* Build configuration list for PBXNativeTarget "sylvia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				379FA3F223CC147000F30505 /* Debug */,
+				379FA3F323CC147000F30505 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		379FA3F423CC147000F30505 /* Build configuration list for PBXNativeTarget "sylviaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				379FA3F523CC147000F30505 /* Debug */,
+				379FA3F623CC147000F30505 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
