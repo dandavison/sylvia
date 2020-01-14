@@ -29,6 +29,7 @@
 		379FA40823CE0C8000F30505 /* RecordingDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA40723CE0C8000F30505 /* RecordingDataModel.swift */; };
 		379FA40A23CE0CD600F30505 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA40923CE0CD600F30505 /* Helper.swift */; };
 		379FA40C23CE2FE200F30505 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA40B23CE2FE200F30505 /* AudioPlayer.swift */; };
+		379FA40E23CE81EB00F30505 /* SpectrogramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA40D23CE81EB00F30505 /* SpectrogramView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +131,7 @@
 		379FA40723CE0C8000F30505 /* RecordingDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingDataModel.swift; sourceTree = "<group>"; };
 		379FA40923CE0CD600F30505 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		379FA40B23CE2FE200F30505 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		379FA40D23CE81EB00F30505 /* SpectrogramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectrogramView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +226,7 @@
 				379FA3D723CC146E00F30505 /* AppDelegate.swift */,
 				379FA3D923CC146E00F30505 /* SceneDelegate.swift */,
 				379FA3DB23CC146E00F30505 /* ContentView.swift */,
+				379FA40D23CE81EB00F30505 /* SpectrogramView.swift */,
 				379FA40723CE0C8000F30505 /* RecordingDataModel.swift */,
 				379FA40323CE09F000F30505 /* RecordingsView.swift */,
 				379FA40B23CE2FE200F30505 /* AudioPlayer.swift */,
@@ -454,6 +457,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				379FA40E23CE81EB00F30505 /* SpectrogramView.swift in Sources */,
 				379FA3D823CC146E00F30505 /* AppDelegate.swift in Sources */,
 				379FA40623CE0B7500F30505 /* Extensions.swift in Sources */,
 				379FA40C23CE2FE200F30505 /* AudioPlayer.swift in Sources */,

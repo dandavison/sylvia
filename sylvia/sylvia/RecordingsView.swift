@@ -14,6 +14,7 @@ struct RecordingRow: View {
     var audioURL: URL
 
     @ObservedObject var audioPlayer = AudioPlayer()
+    @State private var isPlaying = false
 
     var body: some View {
         HStack {
@@ -22,13 +23,17 @@ struct RecordingRow: View {
             if audioPlayer.isPlaying == false {
                 Button(action: {
                     self.audioPlayer.startPlayback(audio: self.audioURL)
+                    self.isPlaying = true
                 }) {
                     Image(systemName: "play.circle")
                         .imageScale(.large)
+                }.sheet(isPresented: self.$isPlaying) {
+                    SpectrogramView()
                 }
             } else {
                 Button(action: {
                     self.audioPlayer.stopPlayback()
+                    self.isPlaying = false
                 }) {
                     Image(systemName: "stop.fill")
                         .imageScale(.large)
