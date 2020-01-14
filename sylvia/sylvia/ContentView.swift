@@ -17,7 +17,7 @@ struct ContentView: View {
             VStack {
                 RecordingsList(audioRecorder: audioRecorder)
                 if audioRecorder.recording == false {
-                    Button(action: {print("Start recording")}) {
+                    Button(action: {self.audioRecorder.startRecording()}) {
                         Image(systemName: "circle.fill")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
@@ -27,7 +27,7 @@ struct ContentView: View {
                             .padding(.bottom, 40)
                     }
                 } else {
-                    Button(action: {print("Stop recording)")}) {
+                    Button(action: {self.audioRecorder.stopRecording()}) {
                         Image(systemName: "stop.fill")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
