@@ -39,9 +39,9 @@ class AudioRecorder: NSObject, ObservableObject {
             print("Failed to set up recording session")
         }
         let documentPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-        let audioFilename = documentPath.appendingPathComponent("\(Date().toString(dateFormat: "dd-MM-YY_'at'_HH:mm:ss")).m4a")
+        let audioFilename = documentPath.appendingPathComponent("\(Date().toString(dateFormat: "dd-MM-YY_'at'_HH:mm:ss")).wav")
         let settings = [
-            AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
+            AVFormatIDKey: Int(kAudioFormatLinearPCM),
             AVSampleRateKey: 12000,
             AVNumberOfChannelsKey: 1,
             AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
