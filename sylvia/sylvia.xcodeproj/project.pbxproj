@@ -23,6 +23,8 @@
 		379FA3E123CC147000F30505 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 379FA3E023CC147000F30505 /* Preview Assets.xcassets */; };
 		379FA3E423CC147000F30505 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379FA3E223CC147000F30505 /* LaunchScreen.storyboard */; };
 		379FA3EF23CC147000F30505 /* sylviaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA3EE23CC147000F30505 /* sylviaTests.swift */; };
+		379FA40223CE088500F30505 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA3F923CE076300F30505 /* AudioRecorder.swift */; };
+		379FA40423CE09F000F30505 /* RecordingsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA40323CE09F000F30505 /* RecordingsList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +120,8 @@
 		379FA3EA23CC147000F30505 /* sylviaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sylviaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		379FA3EE23CC147000F30505 /* sylviaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sylviaTests.swift; sourceTree = "<group>"; };
 		379FA3F023CC147000F30505 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		379FA3F923CE076300F30505 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		379FA40323CE09F000F30505 /* RecordingsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,9 +211,11 @@
 		379FA3D623CC146E00F30505 /* sylvia */ = {
 			isa = PBXGroup;
 			children = (
+				379FA3F923CE076300F30505 /* AudioRecorder.swift */,
 				379FA3D723CC146E00F30505 /* AppDelegate.swift */,
 				379FA3D923CC146E00F30505 /* SceneDelegate.swift */,
 				379FA3DB23CC146E00F30505 /* ContentView.swift */,
+				379FA40323CE09F000F30505 /* RecordingsList.swift */,
 				379FA3DD23CC147000F30505 /* Assets.xcassets */,
 				379FA3E223CC147000F30505 /* LaunchScreen.storyboard */,
 				379FA3E523CC147000F30505 /* Info.plist */,
@@ -438,6 +444,8 @@
 			files = (
 				379FA3D823CC146E00F30505 /* AppDelegate.swift in Sources */,
 				379FA3DA23CC146E00F30505 /* SceneDelegate.swift in Sources */,
+				379FA40423CE09F000F30505 /* RecordingsList.swift in Sources */,
+				379FA40223CE088500F30505 /* AudioRecorder.swift in Sources */,
 				379FA3DC23CC146E00F30505 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
