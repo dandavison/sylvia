@@ -26,6 +26,8 @@
 		379FA40223CE088500F30505 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA3F923CE076300F30505 /* AudioRecorder.swift */; };
 		379FA40423CE09F000F30505 /* RecordingsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA40323CE09F000F30505 /* RecordingsList.swift */; };
 		379FA40623CE0B7500F30505 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA40523CE0B7500F30505 /* Extensions.swift */; };
+		379FA40823CE0C8000F30505 /* RecordingDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA40723CE0C8000F30505 /* RecordingDataModel.swift */; };
+		379FA40A23CE0CD600F30505 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA40923CE0CD600F30505 /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +126,8 @@
 		379FA3F923CE076300F30505 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
 		379FA40323CE09F000F30505 /* RecordingsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsList.swift; sourceTree = "<group>"; };
 		379FA40523CE0B7500F30505 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		379FA40723CE0C8000F30505 /* RecordingDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingDataModel.swift; sourceTree = "<group>"; };
+		379FA40923CE0CD600F30505 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,11 +222,13 @@
 				379FA3D723CC146E00F30505 /* AppDelegate.swift */,
 				379FA3D923CC146E00F30505 /* SceneDelegate.swift */,
 				379FA3DB23CC146E00F30505 /* ContentView.swift */,
+				379FA40723CE0C8000F30505 /* RecordingDataModel.swift */,
 				379FA40323CE09F000F30505 /* RecordingsList.swift */,
 				379FA3DD23CC147000F30505 /* Assets.xcassets */,
 				379FA3E223CC147000F30505 /* LaunchScreen.storyboard */,
 				379FA3E523CC147000F30505 /* Info.plist */,
 				379FA3DF23CC147000F30505 /* Preview Content */,
+				379FA40923CE0CD600F30505 /* Helper.swift */,
 			);
 			path = sylvia;
 			sourceTree = "<group>";
@@ -447,10 +453,12 @@
 			files = (
 				379FA3D823CC146E00F30505 /* AppDelegate.swift in Sources */,
 				379FA40623CE0B7500F30505 /* Extensions.swift in Sources */,
+				379FA40823CE0C8000F30505 /* RecordingDataModel.swift in Sources */,
 				379FA3DA23CC146E00F30505 /* SceneDelegate.swift in Sources */,
 				379FA40423CE09F000F30505 /* RecordingsList.swift in Sources */,
 				379FA40223CE088500F30505 /* AudioRecorder.swift in Sources */,
 				379FA3DC23CC146E00F30505 /* ContentView.swift in Sources */,
+				379FA40A23CE0CD600F30505 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,7 +23,7 @@ struct ContentView: View {
                             .aspectRatio(contentMode: .fill)
                             .frame(width: 100, height: 100)
                             .clipped()
-                            .foregroundColor(.red)
+                            .foregroundColor(.green)
                             .padding(.bottom, 40)
                     }
                 } else {
