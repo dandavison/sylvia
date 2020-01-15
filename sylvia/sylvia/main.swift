@@ -8,9 +8,13 @@
 
 import Foundation
 
-let spectrogram = Spectrogram()
+let args: [ArgType: String]
 do {
-    try spectrogram.createSpectrogram()
+    try args = parseArgs()
 } catch {
     fatalError()
 }
+
+let spectrogram = Spectrogram()
+let image = spectrogram.createSpectrogram(URL(fileURLWithPath: args[.InputFile]!), chunkSize: Int(args[.ChunkSize]!)!)!
+saveImage(image: image.cgImage, url: URL(fileURLWithPath: args[.OutputFile]!))

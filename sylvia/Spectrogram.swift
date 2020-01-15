@@ -10,9 +10,8 @@ import Foundation
 import SwiftImage
 
 class Spectrogram {
-    func loadAudioData(_ inputFile: String) -> [Float]? {
-        let url = URL(fileURLWithPath: inputFile)
-        if let audio = DataLoader.loadAudioSamplesArrayOf(Float.self, atUrl:url) {
+    func loadAudioData(_ inputFile: URL) -> [Float]? {
+        if let audio = DataLoader.loadAudioSamplesArrayOf(Float.self, atUrl: inputFile) {
             return audio
         }
         return nil
@@ -39,17 +38,10 @@ class Spectrogram {
         return image
     }
 
-    func createSpectrogram() throws {
-        let args: [ArgType: String]
-        do {
-            try args = parseArgs()
-        } catch {
-            fatalError()
-        }
-        let chunkSize = Int(args[.ChunkSize]!)!
+    func createSpectrogram(_ inputFile: URL, chunkSize: Int) -> Image<RGBA<Float>>? {
         let chunkStep = 100
 
-        if let audio = loadAudioData(args[.InputFile]!) {
+        if let audio = loadAudioData(inputFile) {
             var fftValues = [[Float]]()
 
             for chunk in audio.slidingChunks(chunkSize, chunkStep:chunkStep) {
@@ -61,11 +53,9 @@ class Spectrogram {
                 }
             }
             print("Computed FFT: \(fftValues.count) x \(fftValues.first!.count)")
-            if let image = drawMagnitudes(magnitudes: fftValues) {
-                saveImage(image: image.cgImage, url: URL(fileURLWithPath: args[.OutputFile]!))
-            }
+            return drawMagnitudes(magnitudes: fftValues)
         } else {
-            print("Failed to load audio file: \(args[.InputFile]!)")
+            return nil
         }
     }
 }
