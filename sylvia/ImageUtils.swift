@@ -20,5 +20,6 @@ import CoreServices
 func saveImage(image: CGImage, url: URL) -> Bool {
     let destination = CGImageDestinationCreateWithURL(url as CFURL, kUTTypePNG, 1, nil)!
     CGImageDestinationAddImage(destination, image, nil)
+    CGImageDestinationFinalize(destination)
     return true
 }

@@ -11,24 +11,25 @@ import SwiftUI
 
 struct RecordingRow: View {
 
-    var audioURL: URL
+    var audioFilename: URL
+    var spectrogramFilename: URL
 
     @ObservedObject var audioPlayer = AudioPlayer()
     @State private var isPlaying = false
 
     var body: some View {
         HStack {
-            Text("\(audioURL.lastPathComponent)")
+            Text("\(audioFilename.lastPathComponent)")
             Spacer()
             if audioPlayer.isPlaying == false {
                 Button(action: {
-                    self.audioPlayer.startPlayback(audio: self.audioURL)
+                    self.audioPlayer.startPlayback(audioFilename: self.audioFilename)
                     self.isPlaying = true
                 }) {
                     Image(systemName: "play.circle")
                         .imageScale(.large)
                 }.sheet(isPresented: self.$isPlaying) {
-                    SpectrogramView()
+                    SpectrogramView(spectrogramFilename: self.spectrogramFilename)
                 }
             } else {
                 Button(action: {
@@ -50,7 +51,8 @@ struct RecordingsList: View {
     var body: some View {
         List {
             ForEach(audioRecorder.recordings, id: \.createdAt) { recording in
-                RecordingRow(audioURL: recording.fileURL)
+                RecordingRow(audioFilename: recording.audioFilename,
+                             spectrogramFilename: recording.spectrogramFilename)
             }
         }
     }

@@ -9,6 +9,7 @@
 import Foundation
 
 struct Recording {
-    let fileURL: URL
+    let audioFilename: URL
+    let spectrogramFilename: URL
     let createdAt: Date
 }

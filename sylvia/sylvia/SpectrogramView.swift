@@ -10,7 +10,10 @@ import SwiftUI
 
 struct SpectrogramView: View {
 
+    var spectrogramFilename: URL
+
     var body: some View {
-        Text("Sonogram here")
+        print("SpectrogramView: displaying image: \(self.spectrogramFilename)")
+        return Image(uiImage: UIImage(contentsOfFile: self.spectrogramFilename.path)!)
     }
 }

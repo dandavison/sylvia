@@ -37,7 +37,7 @@ struct ContentView: View {
                             .padding(.bottom, 40)
                     }
                 }
-            }.navigationBarTitle("Audio Recorder")
+            }.navigationBarTitle("Recordings")
         }
     }
 }
