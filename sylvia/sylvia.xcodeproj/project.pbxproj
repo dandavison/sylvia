@@ -25,11 +25,17 @@
 		379FA3EF23CC147000F30505 /* sylviaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA3EE23CC147000F30505 /* sylviaTests.swift */; };
 		379FA40223CE088500F30505 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA3F923CE076300F30505 /* AudioRecorder.swift */; };
 		379FA40423CE09F000F30505 /* RecordingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA40323CE09F000F30505 /* RecordingsView.swift */; };
-		379FA40623CE0B7500F30505 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA40523CE0B7500F30505 /* Extensions.swift */; };
 		379FA40823CE0C8000F30505 /* RecordingDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA40723CE0C8000F30505 /* RecordingDataModel.swift */; };
 		379FA40A23CE0CD600F30505 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA40923CE0CD600F30505 /* Helper.swift */; };
 		379FA40C23CE2FE200F30505 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA40B23CE2FE200F30505 /* AudioPlayer.swift */; };
 		379FA40E23CE81EB00F30505 /* SpectrogramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA40D23CE81EB00F30505 /* SpectrogramView.swift */; };
+		379FA40F23CE91A900F30505 /* Spectrogram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA39223C8BFEC00F30505 /* Spectrogram.swift */; };
+		379FA41023CE91E100F30505 /* Rescale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA3A023C8F3A100F30505 /* Rescale.swift */; };
+		379FA41123CE91E100F30505 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA39C23C8F32400F30505 /* Extensions.swift */; };
+		379FA41223CE91E100F30505 /* FFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA39E23C8F35F00F30505 /* FFT.swift */; };
+		379FA41323CE91E100F30505 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA39423C8D88100F30505 /* DataLoader.swift */; };
+		379FA41423CE91E100F30505 /* ImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FA3C323C9676400F30505 /* ImageUtils.swift */; };
+		379FA41623CE92F300F30505 /* SwiftImage in Frameworks */ = {isa = PBXBuildFile; productRef = 379FA41523CE92F300F30505 /* SwiftImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,7 +133,6 @@
 		379FA3F023CC147000F30505 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		379FA3F923CE076300F30505 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
 		379FA40323CE09F000F30505 /* RecordingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsView.swift; sourceTree = "<group>"; };
-		379FA40523CE0B7500F30505 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		379FA40723CE0C8000F30505 /* RecordingDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingDataModel.swift; sourceTree = "<group>"; };
 		379FA40923CE0CD600F30505 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		379FA40B23CE2FE200F30505 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
@@ -147,6 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				379FA41623CE92F300F30505 /* SwiftImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +228,6 @@
 			isa = PBXGroup;
 			children = (
 				379FA3F923CE076300F30505 /* AudioRecorder.swift */,
-				379FA40523CE0B7500F30505 /* Extensions.swift */,
 				379FA3D723CC146E00F30505 /* AppDelegate.swift */,
 				379FA3D923CC146E00F30505 /* SceneDelegate.swift */,
 				379FA3DB23CC146E00F30505 /* ContentView.swift */,
@@ -292,6 +297,9 @@
 			dependencies = (
 			);
 			name = sylvia;
+			packageProductDependencies = (
+				379FA41523CE92F300F30505 /* SwiftImage */,
+			);
 			productName = sylvia;
 			productReference = 379FA3D523CC146E00F30505 /* sylvia.app */;
 			productType = "com.apple.product-type.application";
@@ -457,9 +465,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				379FA41023CE91E100F30505 /* Rescale.swift in Sources */,
+				379FA41123CE91E100F30505 /* Extensions.swift in Sources */,
+				379FA41223CE91E100F30505 /* FFT.swift in Sources */,
+				379FA41323CE91E100F30505 /* DataLoader.swift in Sources */,
+				379FA41423CE91E100F30505 /* ImageUtils.swift in Sources */,
+				379FA40F23CE91A900F30505 /* Spectrogram.swift in Sources */,
 				379FA40E23CE81EB00F30505 /* SpectrogramView.swift in Sources */,
 				379FA3D823CC146E00F30505 /* AppDelegate.swift in Sources */,
-				379FA40623CE0B7500F30505 /* Extensions.swift in Sources */,
 				379FA40C23CE2FE200F30505 /* AudioPlayer.swift in Sources */,
 				379FA40823CE0C8000F30505 /* RecordingDataModel.swift in Sources */,
 				379FA3DA23CC146E00F30505 /* SceneDelegate.swift in Sources */,
@@ -781,6 +794,11 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		379FA3C123C9612A00F30505 /* SwiftImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 379FA3C023C9612A00F30505 /* XCRemoteSwiftPackageReference "swift-image" */;
+			productName = SwiftImage;
+		};
+		379FA41523CE92F300F30505 /* SwiftImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 379FA3C023C9612A00F30505 /* XCRemoteSwiftPackageReference "swift-image" */;
 			productName = SwiftImage;
